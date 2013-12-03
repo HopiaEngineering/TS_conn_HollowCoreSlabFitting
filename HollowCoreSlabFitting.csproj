@@ -60,27 +60,31 @@
     <Reference Include="System.Xml" />
     <Reference Include="Tekla.Structures, Version=19.1.0.0, Culture=neutral, PublicKeyToken=2f04dbe497b71114, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\TeklaStructures\18.0\nt\bin\plugins\Tekla.Structures.dll</HintPath>
+      <HintPath>..\..\TeklaStructures\18.1\nt\bin\plugins\Tekla.Structures.dll</HintPath>
     </Reference>
     <Reference Include="Tekla.Structures.Catalogs, Version=19.1.0.0, Culture=neutral, PublicKeyToken=2f04dbe497b71114, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\TeklaStructures\18.0\nt\bin\plugins\Tekla.Structures.Catalogs.dll</HintPath>
+      <HintPath>..\..\TeklaStructures\18.1\nt\bin\plugins\Tekla.Structures.Catalogs.dll</HintPath>
     </Reference>
     <Reference Include="Tekla.Structures.Datatype, Version=19.1.0.0, Culture=neutral, PublicKeyToken=2f04dbe497b71114, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\TeklaStructures\18.0\nt\bin\plugins\Tekla.Structures.Datatype.dll</HintPath>
+      <HintPath>..\..\TeklaStructures\18.1\nt\bin\plugins\Tekla.Structures.Datatype.dll</HintPath>
     </Reference>
     <Reference Include="Tekla.Structures.Dialog, Version=19.1.0.0, Culture=neutral, PublicKeyToken=2f04dbe497b71114, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\TeklaStructures\18.0\nt\bin\dialogs\Tekla.Structures.Dialog.dll</HintPath>
+      <HintPath>..\..\TeklaStructures\18.1\nt\bin\dialogs\Tekla.Structures.Dialog.dll</HintPath>
+    </Reference>
+    <Reference Include="Tekla.Structures.Drawing, Version=19.1.0.0, Culture=neutral, PublicKeyToken=2f04dbe497b71114, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\TeklaStructures\18.1\nt\bin\plugins\Tekla.Structures.Drawing.dll</HintPath>
     </Reference>
     <Reference Include="Tekla.Structures.Model, Version=19.1.0.0, Culture=neutral, PublicKeyToken=2f04dbe497b71114, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\TeklaStructures\18.0\nt\bin\plugins\Tekla.Structures.Model.dll</HintPath>
+      <HintPath>..\..\TeklaStructures\18.1\nt\bin\plugins\Tekla.Structures.Model.dll</HintPath>
     </Reference>
-    <Reference Include="Tekla.Structures.Plugins, Version=17.0.0.0, Culture=neutral, PublicKeyToken=2f04dbe497b71114, processorArchitecture=MSIL">
+    <Reference Include="Tekla.Structures.Plugins, Version=18.0.0.0, Culture=neutral, PublicKeyToken=2f04dbe497b71114, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\TeklaStructures\18.0\nt\bin\plugins\Tekla.Structures.Plugins.dll</HintPath>
+      <HintPath>..\..\TeklaStructures\18.1\nt\bin\plugins\Tekla.Structures.Plugins.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -107,8 +111,8 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy $(TargetPath) C:\TeklaStructures\18.0\nt\bin\plugins\Tekla\Model
-copy $(ProjectDir)images\*.bmp C:\TeklaStructures\18.0\nt\bitmaps</PostBuildEvent>
+    <PostBuildEvent>copy $(TargetPath) C:\TeklaStructures\18.1\nt\bin\plugins\Tekla\Model
+copy $(ProjectDir)images\*.bmp C:\TeklaStructures\18.1\nt\bitmaps</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
